@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/layth/IdeaProjects/SnackVendingMachine/src/main/java/com/freightos/snackvendingmachine</OriginalElement>
+  <nodes>
+    <node x="2100.0" y="476.0">com.freightos.snackvendingmachine.controllers.requests.SelectRequest</node>
+    <node x="-133.0" y="605.0">com.freightos.snackvendingmachine.controllers.ItemController</node>
+    <node x="543.0" y="617.5">com.freightos.snackvendingmachine.models.emuns.Currency</node>
+    <node x="805.0" y="381.5">com.freightos.snackvendingmachine.vendingmachine.statemachine.VendingMachineConfiguration</node>
+    <node x="-133.0" y="284.0">com.freightos.snackvendingmachine.services.ItemSlotService</node>
+    <node x="563.0" y="369.0">com.freightos.snackvendingmachine.exceptions.ItemUnavailableException</node>
+    <node x="718.0" y="134.5">com.freightos.snackvendingmachine.models.item.SnackItem</node>
+    <node x="1111.0" y="134.5">com.freightos.snackvendingmachine.services.implementations.VendingMachineServiceImpl</node>
+    <node x="102.0" y="381.5">com.freightos.snackvendingmachine.SnackVendingMachineInitializer</node>
+    <node x="-133.0" y="476.0">com.freightos.snackvendingmachine.controllers.requests.InsertMoneyRequest</node>
+    <node x="855.0" y="476.0">com.freightos.snackvendingmachine.controllers.responses.APIResponseBody</node>
+    <node x="171.0" y="617.5">com.freightos.snackvendingmachine.models.emuns.MoneyType</node>
+    <node x="-133.0" y="34.0">com.freightos.snackvendingmachine.vendingmachine.VendingMachine</node>
+    <node x="1485.0" y="488.5">com.freightos.snackvendingmachine.models.money.CardInformation</node>
+    <node x="-133.0" y="712.0">com.freightos.snackvendingmachine.models.emuns.ItemType</node>
+    <node x="319.0" y="134.5">com.freightos.snackvendingmachine.vendingmachine.SnackVendingMachine</node>
+    <node x="317.0" y="583.0">com.freightos.snackvendingmachine.handlers.APIException</node>
+    <node x="394.5" y="296.5">com.freightos.snackvendingmachine.thirdparties.CardService</node>
+    <node x="861.0" y="134.5">com.freightos.snackvendingmachine.services.VendingMachineService</node>
+    <node x="1882.0" y="476.0">com.freightos.snackvendingmachine.exceptions.InvalidInputException</node>
+    <node x="2442.0" y="454.0">com.freightos.snackvendingmachine.models.money.MoneySlot</node>
+    <node x="542.0" y="111.0">com.freightos.snackvendingmachine.models.item.Item</node>
+    <node x="1078.0" y="358.0">com.freightos.snackvendingmachine.controllers.responses.InsertMoneyResponse</node>
+    <node x="635.0" y="488.5">com.freightos.snackvendingmachine.vendingmachine.statemachine.VendingMachineEvent</node>
+    <node x="173.0" y="488.5">com.freightos.snackvendingmachine.controllers.VendingMachineController</node>
+    <node x="1271.0" y="465.0">com.freightos.snackvendingmachine.models.emuns.MoneyDenomination</node>
+    <node x="935.0" y="572.0">com.freightos.snackvendingmachine.models.item.ItemSlot</node>
+    <node x="1665.0" y="134.5">com.freightos.snackvendingmachine.services.implementations.PaymentServiceImpl</node>
+    <node x="1679.0" y="-15.0">com.freightos.snackvendingmachine.services.PaymentService</node>
+    <node x="1370.0" y="134.5">com.freightos.snackvendingmachine.SnackVendingMachineApplication</node>
+    <node x="1053.0" y="488.5">com.freightos.snackvendingmachine.vendingmachine.statemachine.VendingMachineState</node>
+    <node x="548.5" y="296.5">com.freightos.snackvendingmachine.exceptions.NoEnoughChangeException</node>
+    <node x="-133.0" y="369.0">com.freightos.snackvendingmachine.services.implementations.ItemSlotServiceImpl</node>
+    <node x="2261.0" y="465.0">com.freightos.snackvendingmachine.controllers.responses.SelectResponse</node>
+    <node x="1670.0" y="488.5">com.freightos.snackvendingmachine.handlers.ApiExceptionHandler</node>
+    <node x="679.0" y="605.0">com.freightos.snackvendingmachine.controllers.requests.CardRequest</node>
+    <node x="421.0" y="488.5">com.freightos.snackvendingmachine.helpers.MoneyChangeHelper</node>
+    <node x="380.0" y="381.5">com.freightos.snackvendingmachine.thirdparties.implementations.CardServiceImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.freightos.snackvendingmachine.vendingmachine.SnackVendingMachine" target="com.freightos.snackvendingmachine.vendingmachine.VendingMachine" relationship="GENERALIZATION">
+      <point x="-96.5" y="-0.0" />
+      <point x="201.0" y="-0.0" />
+    </edge>
+    <edge source="com.freightos.snackvendingmachine.services.implementations.ItemSlotServiceImpl" target="com.freightos.snackvendingmachine.services.ItemSlotService" relationship="REALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.freightos.snackvendingmachine.vendingmachine.VendingMachine" target="com.freightos.snackvendingmachine.models.item.Item" relationship="DEPENDENCY">
+      <point x="0.0" y="-115.0" />
+      <point x="68.0" y="24.0" />
+      <point x="605.0" y="24.0" />
+      <point x="0.0" y="-38.0" />
+    </edge>
+    <edge source="com.freightos.snackvendingmachine.services.implementations.VendingMachineServiceImpl" target="com.freightos.snackvendingmachine.services.VendingMachineService" relationship="REALIZATION">
+      <point x="-114.5" y="-0.0" />
+      <point x="100.0" y="-0.0" />
+    </edge>
+    <edge source="com.freightos.snackvendingmachine.models.item.SnackItem" target="com.freightos.snackvendingmachine.models.item.Item" relationship="GENERALIZATION">
+      <point x="-56.5" y="-0.0" />
+      <point x="63.0" y="-0.0" />
+    </edge>
+    <edge source="com.freightos.snackvendingmachine.services.implementations.PaymentServiceImpl" target="com.freightos.snackvendingmachine.services.PaymentService" relationship="REALIZATION">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.freightos.snackvendingmachine.thirdparties.implementations.CardServiceImpl" target="com.freightos.snackvendingmachine.thirdparties.CardService" relationship="REALIZATION">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.38627655869035177" showDependencies="false" x="1302.5" y="385.49999999999994" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

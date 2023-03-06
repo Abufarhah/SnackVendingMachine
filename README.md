@@ -18,8 +18,6 @@ The vending machine has four main actions for the end-user:
   API is /vending-machine/pay-using-card.
 - **Cancel Transaction:** This API allows the user to cancel the transaction and get back the money. The endpoint for
   this API is /vending-machine/cancel-transaction.
-- **WebSockets:** Using WebSockets could enable interactive communication between users and the vending machine UI,
-- allowing for real-time updates and feedback during the transaction process.
 
 ## Technology Stack:
 
@@ -39,6 +37,8 @@ The project still needs the following improvements:
 - **More Logging:** The project needs more logging to help in debugging any issues that may arise during the vending
   machine transactions.
 - **Comments:** The project needs more comments to make it easier for developers to understand the code.
+- **WebSockets:** Using WebSockets could enable interactive communication between users and the vending machine UI,
+  allowing for real-time updates and feedback during the transaction process.
 
 ## Conclusion:
 

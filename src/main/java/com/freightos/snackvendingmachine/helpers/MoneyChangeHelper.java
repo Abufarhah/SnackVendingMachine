@@ -1,20 +1,16 @@
 package com.freightos.snackvendingmachine.helpers;
 
 import com.freightos.snackvendingmachine.models.emuns.MoneyDenomination;
-import com.freightos.snackvendingmachine.models.money.MoneySlot;
 import com.freightos.snackvendingmachine.vendingmachine.SnackVendingMachine;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class MoneyChangeHelper {
 
     private Map<Double, Integer> valueToCountMap;
-
-    private int[] dp;
-    private int[] coinCounts;
 
     private SnackVendingMachine snackVendingMachine;
 
@@ -23,6 +19,8 @@ public class MoneyChangeHelper {
         valueToCountMap = snackVendingMachine.getDenominationToSlotMap().values().stream().collect(Collectors.toMap(moneySlot -> moneySlot.getMoneyDenomination().getValue() * 10, moneySlot -> moneySlot.getCount()));
     }
 
+    //This solution can be enhanced by using the previous db array.
+    //Just update the dp when needed
     public Map<MoneyDenomination, Integer> getChange(List<MoneyDenomination> money, double change) {
         money.forEach(moneyDenomination -> {
             Integer count = valueToCountMap.getOrDefault(moneyDenomination.getValue() * 10, 0);
@@ -81,15 +79,5 @@ public class MoneyChangeHelper {
 
 
     }
-
-    private static int findCoinIndex(int[] coins, int amount) {
-        for (int i = 0; i < coins.length; i++) {
-            if (coins[i] == amount) {
-                return i;
-            }
-        }
-        return -1;
-    }
-
 
 }

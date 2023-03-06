@@ -18,6 +18,8 @@ The vending machine has four main actions for the end-user:
   API is /vending-machine/pay-using-card.
 - **Cancel Transaction:** This API allows the user to cancel the transaction and get back the money. The endpoint for
   this API is /vending-machine/cancel-transaction.
+- **WebSockets:** Using WebSockets could enable interactive communication between users and the vending machine UI,
+- allowing for real-time updates and feedback during the transaction process.
 
 ## Technology Stack:
 
